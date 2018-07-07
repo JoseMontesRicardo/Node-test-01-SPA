@@ -1,0 +1,43 @@
+<aside>
+  <h1>ComicDiscover.com</h1>
+  <article>
+    <div class="card" *ngFor = " let hero of heros ">
+      <img src="{{hero.thumbnail.path}}">
+      <h2>{{hero.name}}</h2>
+      <p>{{hero.description}}</p>
+      <div class="row flex" >
+        <button type="button" (click)="details(url, hero)" *ngFor = " let url of hero.urls ">{{url.type}}</button>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/standard_xlarge.jpg">
+      <h2>Hulk</h2>
+      <p>It's the beginning of a new era for Iron Man as the armored avenger's world for the 21st century is redefined-a landscape of terrifying new technologies that threaten to overwhelm fragile mankind! What is Extremis, who has unleashed it, and what does its emergence portend for the world?</p>
+      <div class="row flex">
+        <button type="button" (click)="details()">Details</button>
+        <button type="button" (click)="wiki()">Wiki</button>
+        <button type="button" (click)="comics()">Comics</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/standard_xlarge.jpg">
+      <h2>Wolverine</h2>
+      <p>It's the beginning of a new era for Iron Man as the armored avenger's world for the 21st century is redefined-a landscape of terrifying new technologies that threaten to overwhelm fragile mankind! What is Extremis, who has unleashed it, and what does its emergence portend for the world?</p>
+      <div class="row flex">
+        <button type="button" (click)="details()">Details</button>
+        <button type="button" (click)="wiki()">Wiki</button>
+        <button type="button" (click)="comics()">Comics</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/standard_xlarge.jpg">
+      <h2>Ironman</h2>
+      <p>It's the beginning of a new era for Iron Man as the armored avenger's world for the 21st century is redefined-a landscape of terrifying new technologies that threaten to overwhelm fragile mankind! What is Extremis, who has unleashed it, and what does its emergence portend for the world?</p>
+      <div class="row flex">
+        <button type="button" (click)="details()">Details</button>
+        <button type="button" (click)="wiki()">Wiki</button>
+        <button type="button" (click)="comics()">Comics</button>
+      </div>
+    </div> -->
+  </article>
+</aside>

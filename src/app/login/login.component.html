@@ -1,0 +1,22 @@
+<aside>
+  <h1>ComicDiscover.com</h1>
+  <form>
+    <div class="row">
+      <div class="input-field">
+          <label>Name</label>
+          <input [(ngModel)]="newUser.name" type="text" [ngModelOptions]="{standalone:
+            true}">
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field">
+          <label>Email address</label>
+          <input [(ngModel)]="newUser.email" type="text" [ngModelOptions]="{standalone:
+            true}">
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" (click)="getHome(newUser)">Go for it!</button>
+    </div>
+  </form>
+</aside>

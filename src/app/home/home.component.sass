@@ -1,0 +1,80 @@
+aside
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: calc(100vh - 4rem)
+    position: relative
+    margin-top: 2rem
+
+    h1
+        margin: 0 0 0.5rem 0
+        font-size: 2rem
+        font-family: 'Shrikhand', cursive;
+
+    article
+        width: 100%
+        height: auto
+        padding: 2.5rem 3.5rem
+        min-height: 30rem
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        box-sizing: border-box
+
+        div.card
+            display: block
+            position: relative
+            width: 19rem
+            height: 30rem
+            min-width: 15rem
+            border: 1px solid #d8d8db
+            border-radius: 0.25rem
+            margin-right: 0.35rem
+            margin-bottom: 0.35rem
+            background-color: white
+            overflow: hidden
+
+            img
+                width: 100%;
+                height: 15rem
+
+            h2
+                margin: 1rem 0 0.5rem 0
+                display: block
+                padding: 0 0.75rem
+                color: #121212
+                font-size: 1.4rem
+                font-weight: 400
+
+            p
+                display: block
+                max-height: 7rem
+                overflow: auto
+                padding: 0 0.75rem
+                font-size: 0.8rem
+                font-weight: 400
+                color: #121212
+
+            div.row
+                padding: 0 0.75rem
+                
+                &.flex
+                    display: flex
+                    justify-content: space-around
+
+                    button
+                        outline: none
+                        cursor: pointer
+                        margin-top: 1rem
+                        color: #6a8dc1
+                        font-size: 0.85rem
+                        border: 1px solid #c4d3e7
+                        border-radius: 0.25rem
+                        padding: 0.5rem
+
+                        &:hover
+                            background-color: #c4d3e7
+                            color: white
